@@ -1,0 +1,9 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import '../src/scss/mixins.scss';
+@import '../src/scss/variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,28 @@
+@import '../../../scss/mixins.scss';
+@import '../../../scss/variables.scss';
+
+.form-player-ctn {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    .form-player-ctn__form-player-group {
+        margin: 10px 0;
+        width: 100%;
+        position: relative;
+        @include respond-to(dt) {
+            width: auto;
+        }
+        .form-player-group__ctrl {
+            width: 300px;
+        }
+        .form-player-group__btn {
+           border-radius: 0;
+        }
+        .form-player-group__err {
+            position: absolute;
+            color: $color-err-form;
+            font-weight: 700;
+        }
+    }
+}

@@ -1,0 +1,412 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ListPlayer /> should render snapshot 1`] = `
+<table
+  className="table table-bordered"
+>
+  <thead>
+    <tr>
+      <th
+        scope="col"
+      >
+        Player
+      </th>
+      <th
+        scope="col"
+      >
+        Position
+      </th>
+      <th
+        scope="col"
+      >
+        Team
+      </th>
+      <th
+        scope="col"
+      >
+        Age
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Romelu Lukaku
+      </td>
+      <td>
+        Centre-Forward
+      </td>
+      <td>
+        Belgium
+      </td>
+      <td>
+        26
+      </td>
+    </tr>
+    <tr>
+      <td>
+        David de Gea
+      </td>
+      <td>
+        Keeper
+      </td>
+      <td>
+        Spain
+      </td>
+      <td>
+        28
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Sergio Romero
+      </td>
+      <td>
+        Keeper
+      </td>
+      <td>
+        Argentina
+      </td>
+      <td>
+        32
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Eric Bailly
+      </td>
+      <td>
+        Centre-Back
+      </td>
+      <td>
+        Cote d'Ivoire
+      </td>
+      <td>
+        25
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Chris Smalling
+      </td>
+      <td>
+        Centre-Back
+      </td>
+      <td>
+        England
+      </td>
+      <td>
+        29
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Marcos Rojo
+      </td>
+      <td>
+        Centre-Back
+      </td>
+      <td>
+        Argentina
+      </td>
+      <td>
+        29
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Phil Jones
+      </td>
+      <td>
+        Centre-Back
+      </td>
+      <td>
+        England
+      </td>
+      <td>
+        27
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Daley Blind
+      </td>
+      <td>
+        Left-Back
+      </td>
+      <td>
+        Netherlands
+      </td>
+      <td>
+        29
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Luke Shaw
+      </td>
+      <td>
+        Left-Back
+      </td>
+      <td>
+        England
+      </td>
+      <td>
+        24
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Matteo Darmian
+      </td>
+      <td>
+        Right-Back
+      </td>
+      <td>
+        Italy
+      </td>
+      <td>
+        29
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Antonio Valencia
+      </td>
+      <td>
+        Right-Back
+      </td>
+      <td>
+        Ecuador
+      </td>
+      <td>
+        34
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Michael Carrick
+      </td>
+      <td>
+        Defensive Midfield
+      </td>
+      <td>
+        England
+      </td>
+      <td>
+        38
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Paul Pogba
+      </td>
+      <td>
+        Central Midfield
+      </td>
+      <td>
+        France
+      </td>
+      <td>
+        26
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Ander Herrera
+      </td>
+      <td>
+        Central Midfield
+      </td>
+      <td>
+        Spain
+      </td>
+      <td>
+        30
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Marouane Fellaini
+      </td>
+      <td>
+        Central Midfield
+      </td>
+      <td>
+        Belgium
+      </td>
+      <td>
+        31
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Ashley Young
+      </td>
+      <td>
+        Left Midfield
+      </td>
+      <td>
+        England
+      </td>
+      <td>
+        34
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Juan Mata
+      </td>
+      <td>
+        Attacking Midfield
+      </td>
+      <td>
+        Spain
+      </td>
+      <td>
+        31
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Jesse Lingard
+      </td>
+      <td>
+        Left Wing
+      </td>
+      <td>
+        England
+      </td>
+      <td>
+        26
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Anthony Martial
+      </td>
+      <td>
+        Left Wing
+      </td>
+      <td>
+        France
+      </td>
+      <td>
+        23
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Zlatan Ibrahimovic
+      </td>
+      <td>
+        Centre-Forward
+      </td>
+      <td>
+        Sweden
+      </td>
+      <td>
+        38
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Marcus Rashford
+      </td>
+      <td>
+        Centre-Forward
+      </td>
+      <td>
+        England
+      </td>
+      <td>
+        21
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Alexis Sánchez
+      </td>
+      <td>
+        Left Wing
+      </td>
+      <td>
+        Chile
+      </td>
+      <td>
+        30
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Nemanja Matic
+      </td>
+      <td>
+        Defensive Midfield
+      </td>
+      <td>
+        Serbia
+      </td>
+      <td>
+        31
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Victor Lindelöf
+      </td>
+      <td>
+        Centre-Back
+      </td>
+      <td>
+        Sweden
+      </td>
+      <td>
+        25
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Joel Pereira
+      </td>
+      <td>
+        Keeper
+      </td>
+      <td>
+        Portugal
+      </td>
+      <td>
+        23
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Cameron Borthwick-Jackson
+      </td>
+      <td>
+        Left-Back
+      </td>
+      <td>
+        England
+      </td>
+      <td>
+        22
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Scott McTominay
+      </td>
+      <td>
+        Attacking Midfield
+      </td>
+      <td>
+        Scotland
+      </td>
+      <td>
+        22
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

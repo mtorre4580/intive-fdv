@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormPlayer /> should render snapshot 1`] = `
+<form
+  className="form-player-ctn"
+  onChange={[Function]}
+  onSubmit={[Function]}
+>
+  <div
+    className="form-player-ctn__form-player-group"
+  >
+    <input
+      className="form-control form-player-group__ctrl"
+      name="name"
+      placeholder="Player Name"
+      required={true}
+      type="text"
+    />
+  </div>
+  <div
+    className="form-player-ctn__form-player-group"
+  >
+    <select
+      className="form-control form-player-group__ctrl"
+      name="position"
+    >
+      <option
+        value="Attacking Midfield"
+      >
+        Attacking Midfield
+      </option>
+      <option
+        value="Central Midfield"
+      >
+        Central Midfield
+      </option>
+      <option
+        value="Centre-Back"
+      >
+        Centre-Back
+      </option>
+      <option
+        value="Centre-Forward"
+      >
+        Centre-Forward
+      </option>
+      <option
+        value="Defensive Midfield"
+      >
+        Defensive Midfield
+      </option>
+      <option
+        value="Keeper"
+      >
+        Keeper
+      </option>
+      <option
+        value="Left Midfield"
+      >
+        Left Midfield
+      </option>
+      <option
+        value="Left Wing"
+      >
+        Left Wing
+      </option>
+      <option
+        value="Left-Back"
+      >
+        Left-Back
+      </option>
+      <option
+        value="Right-Back"
+      >
+        Right-Back
+      </option>
+    </select>
+  </div>
+  <div
+    className="form-player-ctn__form-player-group"
+  >
+    <input
+      className="form-control form-player-group__ctrl"
+      defaultValue="18"
+      name="age"
+      placeholder="Age"
+      type="number"
+    />
+  </div>
+  <div
+    className="form-player-ctn__form-player-group"
+  >
+    <button
+      className="btn btn-lg btn-block btn-primary form-player-group__btn"
+      type="submit"
+    >
+      Search
+    </button>
+  </div>
+</form>
+`;

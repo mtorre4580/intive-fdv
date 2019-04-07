@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Player /> should render snapshot 1`] = `
+<tr>
+  <td>
+    Lionel
+  </td>
+  <td>
+    Keeper
+  </td>
+  <td>
+    Argentina
+  </td>
+  <td>
+    35
+  </td>
+</tr>
+`;
