@@ -1,12 +1,9 @@
-import { FootballService } from './core/football.service';
+import { footballService } from './core/football.service';
 import { FootballPlayer, FootballPlayerDefault } from './core/football.models';
 import { FETCH_PLAYERS_LOADING, FETCHED_PLAYERS, FETCH_PLAYERS_ERR, FILTER_PLAYERS, FootballActionTypes }  from './types';
 import { Action } from 'redux';
 import { AppState } from '../store';
 import { ThunkAction } from 'redux-thunk';
-
-// Service for get all players
-const footballService = new FootballService();
 
 export function fetchPlayersLoading() : FootballActionTypes {
   return {

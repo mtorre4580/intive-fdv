@@ -12,6 +12,7 @@ export default function PlayerFinder({onSearch, players, loading, error } : any)
             </header>
             <FormPlayer onSearch={onSearch} />
             { !loading && !error && players.length > 0 && <ListPlayer players={players} /> }
+            { !loading && !error && players.length === 0 && <p className="text-center">No results</p> }
             { !loading && error && <p>Err</p> }
         </section>
     );

@@ -10,8 +10,8 @@ export class FootballService {
     private static API_URL = 'https://football-players-b31f2.firebaseio.com';
     private http: AxiosInstance;
 
-    constructor() {
-        this.http = axios.create({ baseURL: FootballService.API_URL });
+    constructor(mockAxios?: AxiosInstance) {
+        this.http = mockAxios ? mockAxios : axios.create({ baseURL: FootballService.API_URL });
     }
 
     /**
@@ -29,3 +29,7 @@ export class FootballService {
     }
 
 }
+
+const footballService = new FootballService();
+
+export { footballService };

@@ -111,5 +111,10 @@ exports[`<PlayerFinder /> should render snapshot 1`] = `
       </button>
     </div>
   </form>
+  <p
+    className="text-center"
+  >
+    No results
+  </p>
 </section>
 `;
