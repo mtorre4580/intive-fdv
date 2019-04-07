@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { trackErrorInSentry } from './error-handler.service';
+import { trackErrorInSentry } from './error-boundary.service';
 
 export default class ErrorBoundary extends Component {
 

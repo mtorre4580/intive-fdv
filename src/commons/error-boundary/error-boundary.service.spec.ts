@@ -1,4 +1,4 @@
-import { trackErrorInSentry } from './error-handler.service';
+import { trackErrorInSentry } from './error-boundary.service';
 
 describe('ErrorHandlerService', () => {
 

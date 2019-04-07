@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import configureStore from './store';
 import App from './App';
-import ErrorBoundary from '../src/commons/error-handler/error-handler';
+import ErrorBoundary from './commons/error-boundary/error-boundary';
 
 /**
  * Create the store for App
