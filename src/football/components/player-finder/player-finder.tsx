@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import FormPlayer from '../form-player/form-player';
 import ListPlayer from '../list-player/list-player';
+import LoadingResults from '../../../commons/loading-results/loading-results';
 
 export default function PlayerFinder({onSearch, players, loading, error } : any) {
     return (
@@ -11,6 +12,7 @@ export default function PlayerFinder({onSearch, players, loading, error } : any)
                 <h1 className="player-finder-ctn__title">Football Player Finder</h1>
             </header>
             <FormPlayer onSearch={onSearch} />
+            { loading && <LoadingResults /> }
             { !loading && !error && players.length > 0 && <ListPlayer players={players} /> }
             { !loading && !error && players.length === 0 && <p className="text-center">No results</p> }
             { !loading && error && <p>Err</p> }
