@@ -73,8 +73,7 @@ describe('Football Reducers', () => {
       error: false,
       search: null
     }
-    const filterPlayersMock = [{ age: '18', position: 'Centre-Back', name: 'Lionel', team: 'Argentina'}];
-    expect(footballReducer(initialState, mockActionFilterPlayers)).toEqual({...initialState, search: mockActionFilterPlayers.search, players: filterPlayersMock});
+    expect(footballReducer(initialState, mockActionFilterPlayers)).toEqual({...initialState, search: mockActionFilterPlayers.search});
   });
 
 });

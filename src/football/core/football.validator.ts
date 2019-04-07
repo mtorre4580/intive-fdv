@@ -17,9 +17,6 @@ export class FormPlayerValidator {
     static validateField(name: string, value: string, positions: string[]) : string | null | undefined {
         switch (name) {
             case FormPlayerValidator.INPUT_NAME : {
-                if (value === null || value.trim().length === 0) {
-                    return 'Field can not be empty';
-                }
                 return !/[a-zA-Z]/.test(value) ? 'Only letters' : null;
             }
             case FormPlayerValidator.INPUT_POSITION : {
@@ -27,7 +24,7 @@ export class FormPlayerValidator {
             }
             case FormPlayerValidator.INPUT_AGE : {
                 const age = parseInt(value);
-                return !(age > 18 && age <= 40) ? 'Age between 18 and 40' : null;
+                return !(age >= 18 && age <= 40) ? 'Age between 18 and 40' : null;
             }
             default:
                 throw new Error('Input name not exists');

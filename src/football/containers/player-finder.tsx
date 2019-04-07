@@ -5,6 +5,7 @@ import { fetchPlayers, filterPlayers } from '../actions';
 import PlayerFinder from '../components/player-finder/player-finder';
 import React, { Component } from 'react';
 import { FootballPlayerDefault } from '../core/football.models';
+import { getPlayers } from '../selectors';
 
 class PlayerFinderContainer extends Component<any> {
 
@@ -34,7 +35,15 @@ class PlayerFinderContainer extends Component<any> {
     }
 }
 
-const mapStateToProps = (state : AppState) => ({...state.football });
-  
+const mapStateToProps = (state : AppState) => {
+    const { football } = state;
+    return {
+        players: getPlayers(state),
+        loading: football.loading,
+        error: football.error,
+        search: football.search
+    }
+}
+
 export default connect(mapStateToProps, { fetchPlayers, filterPlayers })(PlayerFinderContainer);
   

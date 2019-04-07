@@ -32,11 +32,6 @@ describe('Validators Football', () => {
             }
             expect(thrownError).toBeInstanceOf(Error);
         });
-        it('should validate name not empty', () => {
-            const result = FormPlayerValidator.validateField(FormPlayerValidator.INPUT_NAME, '', []);
-            const expectedMessage = 'Field can not be empty';
-            expect(result).toEqual(expectedMessage);
-        });
         it('should validate name only letters', () => {
             const result = FormPlayerValidator.validateField(FormPlayerValidator.INPUT_NAME, '333333', []);
             const expectedMessage = 'Only letters';

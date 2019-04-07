@@ -15,17 +15,23 @@ exports[`<FormPlayer /> should render snapshot 1`] = `
       className="form-control form-player-group__ctrl"
       name="name"
       placeholder="Player Name"
-      required={true}
       type="text"
     />
   </div>
   <div
-    className="form-player-ctn__form-player-group"
+    className="form-player-ctn__form-player-group form-group"
   >
     <select
       className="form-control form-player-group__ctrl"
+      defaultValue=""
       name="position"
     >
+      <option
+        disabled={true}
+        value=""
+      >
+        Position
+      </option>
       <option
         value="Attacking Midfield"
       >
@@ -83,7 +89,6 @@ exports[`<FormPlayer /> should render snapshot 1`] = `
   >
     <input
       className="form-control form-player-group__ctrl"
-      defaultValue="18"
       name="age"
       placeholder="Age"
       type="number"

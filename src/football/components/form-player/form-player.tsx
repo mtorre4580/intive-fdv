@@ -22,8 +22,8 @@ export default function FormPlayer({ onSearch } : { onSearch: Function }) {
 
     const [formData, setFormData] = useState({
         name: '',
-        position: positions[0],
-        age: '18',
+        position: '',
+        age: '',
     });
 
     const [formErr, setFormErr] = useState({
@@ -48,17 +48,18 @@ export default function FormPlayer({ onSearch } : { onSearch: Function }) {
     return (
         <form className="form-player-ctn" role="search" method="GET" onSubmit={(e : React.FormEvent<HTMLFormElement>)=> onSubmit(e)} onChange={(e : React.ChangeEvent<HTMLFormElement>)=> onChange(e)}>
             <div className="form-player-ctn__form-player-group">
-                <input type="text" name={FormPlayerValidator.INPUT_NAME} className="form-control form-player-group__ctrl" placeholder="Player Name" required/>
+                <input type="text" name={FormPlayerValidator.INPUT_NAME} className="form-control form-player-group__ctrl" placeholder="Player Name" />
                 { formErr.name && <span className="form-player-group__err">{formErr.name}</span>}
             </div>
-            <div className="form-player-ctn__form-player-group">
-                <select className="form-control form-player-group__ctrl" name={FormPlayerValidator.INPUT_POSITION}>
+            <div className="form-player-ctn__form-player-group form-group">
+                <select className="form-control form-player-group__ctrl" name={FormPlayerValidator.INPUT_POSITION}  defaultValue={''}>
+                    <option value="" disabled>Position</option>
                     {positions.map((position, i) => <option value={position} key={i}>{position}</option>)}
                 </select>
             </div>
             <div className="form-player-ctn__form-player-group">
-                <input type="number" name={FormPlayerValidator.INPUT_AGE} className="form-control form-player-group__ctrl" placeholder="Age" defaultValue={formData.age} />
-                { formErr.name && <span className="form-player-group__err">{formErr.age}</span>}
+                <input type="number" name={FormPlayerValidator.INPUT_AGE} className="form-control form-player-group__ctrl" placeholder="Age" />
+                { formErr.age && <span className="form-player-group__err">{formErr.age}</span>}
             </div>
             <div className="form-player-ctn__form-player-group">
                 <button type="submit" className="btn btn-lg btn-block btn-primary form-player-group__btn">Search</button>
