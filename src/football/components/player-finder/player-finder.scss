@@ -1,3 +1,8 @@
+@import '../../../scss/mixins.scss';
+
 .player-finder-ctn {
     padding: 20px;
+    .player-finder-ctn__title {
+        @include font-rem(700, 24px, 24px, null);
+    }
 }

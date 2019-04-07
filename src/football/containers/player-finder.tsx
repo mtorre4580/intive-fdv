@@ -1,11 +1,23 @@
 import { AppState } from '../../store';
-import { connect } from "react-redux";
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { fetchPlayers, filterPlayers } from '../actions';
 import PlayerFinder from '../components/player-finder/player-finder';
 import React, { Component } from 'react';
 import { FootballPlayerDefault } from '../core/football.models';
 
 class PlayerFinderContainer extends Component<any> {
+
+    static propTypes = {
+        players: PropTypes.arrayOf(PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            position: PropTypes.string.isRequired,
+            age: PropTypes.string.isRequired,
+            team: PropTypes.string.isRequired
+        }).isRequired),
+        loading: PropTypes.bool.isRequired,
+        error: PropTypes.bool.isRequired
+    }
 
     componentDidMount() {
         this.props.fetchPlayers();

@@ -4,8 +4,6 @@ import PlayerFinderContainer from '../src/football/containers/player-finder';
 
 export default function App() {
   return (
-    <div className='App'>
-      <PlayerFinderContainer />
-    </div>
+    <PlayerFinderContainer />
   );
 } 

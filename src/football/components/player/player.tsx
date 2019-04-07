@@ -1,5 +1,5 @@
 import React from 'react';
-import { FootballPlayer } from '../../core/football.models';
+import PropTypes from 'prop-types';
 
 export default function Player({name, team, age, position} : any) {
     return (
@@ -10,4 +10,11 @@ export default function Player({name, team, age, position} : any) {
             <td>{age}</td>
         </tr>
     );
+}
+
+Player.propTypes = {
+    name: PropTypes.string.isRequired,
+    position: PropTypes.string.isRequired,
+    age: PropTypes.string.isRequired,
+    team: PropTypes.string.isRequired
 }

@@ -1,6 +1,7 @@
 
 import './form-player.scss';
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { FormPlayerValidator } from '../../core/football.validator';
 
 //This data not fetch from api, #FIXME
@@ -45,7 +46,7 @@ export default function FormPlayer({ onSearch } : { onSearch: Function }) {
     }
 
     return (
-        <form className="form-player-ctn" onSubmit={(e : React.FormEvent<HTMLFormElement>)=> onSubmit(e)} onChange={(e : React.ChangeEvent<HTMLFormElement>)=> onChange(e)}>
+        <form className="form-player-ctn" role="search" method="GET" onSubmit={(e : React.FormEvent<HTMLFormElement>)=> onSubmit(e)} onChange={(e : React.ChangeEvent<HTMLFormElement>)=> onChange(e)}>
             <div className="form-player-ctn__form-player-group">
                 <input type="text" name={FormPlayerValidator.INPUT_NAME} className="form-control form-player-group__ctrl" placeholder="Player Name" required/>
                 { formErr.name && <span className="form-player-group__err">{formErr.name}</span>}
@@ -65,4 +66,8 @@ export default function FormPlayer({ onSearch } : { onSearch: Function }) {
         </form>
     );
 
+}
+
+FormPlayer.propTypes = {
+    onSearch: PropTypes.func.isRequired,
 }

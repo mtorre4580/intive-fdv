@@ -3,8 +3,10 @@
 exports[`<FormPlayer /> should render snapshot 1`] = `
 <form
   className="form-player-ctn"
+  method="GET"
   onChange={[Function]}
   onSubmit={[Function]}
+  role="search"
 >
   <div
     className="form-player-ctn__form-player-group"

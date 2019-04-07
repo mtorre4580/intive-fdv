@@ -14,7 +14,10 @@
             width: auto;
         }
         .form-player-group__ctrl {
-            width: 300px;
+            border-radius: 0;
+            @include respond-to(dt) {
+                width: 300px;
+            }
         }
         .form-player-group__btn {
            border-radius: 0;

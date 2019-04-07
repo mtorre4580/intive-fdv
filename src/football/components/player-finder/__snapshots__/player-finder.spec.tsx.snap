@@ -6,14 +6,18 @@ exports[`<PlayerFinder /> should render snapshot 1`] = `
   role="section"
 >
   <header>
-    <h1>
+    <h1
+      className="player-finder-ctn__title"
+    >
       Football Player Finder
     </h1>
   </header>
   <form
     className="form-player-ctn"
+    method="GET"
     onChange={[Function]}
     onSubmit={[Function]}
+    role="search"
   >
     <div
       className="form-player-ctn__form-player-group"
